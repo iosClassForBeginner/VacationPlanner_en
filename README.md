@@ -41,7 +41,6 @@ This is a tutorial for learning how to use basic animations.
 >> 1. Drap & Drop "UIImageView" from UI components
 >> 2. Resize the imageView
 >> 3. Apply constraints
->> In Attribute Inspector
 >> 4. Set the background image
 >> 5. Set Content Mode to "Aspect Fill"
 
@@ -50,7 +49,6 @@ This is a tutorial for learning how to use basic animations.
 > 2-2. Add username and password textfields to your view
 >> 1. Drap & Drop "UITextField" from UI components
 >> 2. Resize the textField
->> In Attribute Inspector
 >> 3. Add the placeholder text accordingly
 >> 4. Center the placeholder text or align to the left depending on your preference.
 
