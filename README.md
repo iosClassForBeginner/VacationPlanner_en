@@ -30,11 +30,11 @@ This is a tutorial for learning how to use basic animations.
 
 > 0-5. Select the place for saving your project and then tap "Create"
 
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/Resources/vid1.gif" /></div>
+  <div style="text-align:center"><img src="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid1.gif" /></div>
 
 #### 1, Collect photos → Drag & Drop your resources into your projects Assets.xcassets
-  <a href="https://github.com/samkerm/vacationPlanner/blob/master/Resourses">resources</a>
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/Resources/vid2.gif" /></div>
+  <a href="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources">resources</a>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid2.gif" /></div>
 
 #### 2, Design app
 > 2-1. 
@@ -43,7 +43,7 @@ This is a tutorial for learning how to use basic animations.
 >> 3. Apply constraints
 >> 4. Set the background image
 
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/Resources/vid3.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid3.gif" /></div>
 
 > 2-2. Add username and password textfields to your view
 >> 1. Drap & Drop "UITextField" from UI components
@@ -51,7 +51,7 @@ This is a tutorial for learning how to use basic animations.
 >> 3. Add the placeholder text accordingly
 >> 4. Center the placeholder text or align to the left depending on your preference.
 
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/Resources/vid4.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid4.gif" /></div>
 
 > 2-3. Add "Login" button
 >> 1. Drap & Drop "UIButton" from UI components
@@ -59,7 +59,7 @@ This is a tutorial for learning how to use basic animations.
 >> 3. In the attributes inspector change its background color and tint color to your preference
 >> 4. Resize and align the button in your view to the center and below the password textField
 
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/Resources/vid5.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid5.gif" /></div>
 
 > 2-4. Connections
 >> 1. Click on "Assistant Editor" to split the view in two. You will see the code on your right side
@@ -68,15 +68,15 @@ This is a tutorial for learning how to use basic animations.
 >> 4. Do the same for password textField and Login button.
 >> 5. In addition to an IBOutlet create an "IBAction" for your login button to do a task when tapped.
 
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/Resources/vid6.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid6.gif" /></div>
 
 > 2-5. Create a label for your page and size it right and center it on the view.
 
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/Resources/vid7.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid7.gif" /></div>
   
 > 2-6. Under the "Size Inspector" apply the following Autoresizing parameters
 
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/Resources/vid8.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid8.gif" /></div>
 
 #### 3, Add code blocks in ViewController.swift
   ★  It's preferable to write following code yourself. It will help you to understand code more.
