@@ -165,3 +165,8 @@ class ViewController: UIViewController {
 
 1. Make the login button to expand and shrink on tap with spring effect
 2. Change the Login button's title to "Cancel" while its activity indicator is showing and the button is expanded.
+3. Make the login button change color for different states
+
+## Suggestions
+
+Please let us know what you like to learn about next...
