@@ -1,7 +1,7 @@
 # vacationPlanner_en
 This is a tutorial for learning how to use basic animations.
 
-  <div style="text-align:center"><img src ="https://github.com/samkerm/vacationPlanner/blob/master/appScreenShot.png" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/screen.PNG" /></div>
   
   Thank you for visiting our account. We are going to learn about some basic animations by making a Vacation Planner app login page in an hour. If would you like to study yourself before hands-on, or review what you have learned in the session, please use the following material.
 
@@ -30,54 +30,56 @@ This is a tutorial for learning how to use basic animations.
 
 > 0-5. Select the place for saving your project and then tap "Create"
 
-  <div style="text-align:center"><img src="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid1.gif" /></div>
+  <div style="text-align:center"><img src="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid1.gif" /></div>
 
 #### 1, Collect photos → Drag & Drop your resources into your projects Assets.xcassets
   <a href="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources">resources</a>
-  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid2.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid2.gif" /></div>
 
 #### 2, Design app
 > 2-1. 
 >> 1. Drap & Drop "UIImageView" from UI components
->> 2. Resize the imageView
->> 3. Apply constraints
+>> 2. Resize the imageView to 375 points by 375 or any other square dimensions that fits the screen
+>> 3. Center the image
 >> 4. Set the background image
->> 5. Set Content Mode to "Aspect Fill"
 
-  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid3.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid3.gif" /></div>
 
-> 2-2. Add username and password textfields to your view
->> 1. Drap & Drop "UITextField" from UI components
->> 2. Resize the textField
->> 3. Add the placeholder text accordingly
->> 4. Center the placeholder text or align to the left depending on your preference.
-
-  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid4.gif" /></div>
-
-> 2-3. Add "Login" button
+> 2-2. Add a button on top of your background "board" image
 >> 1. Drap & Drop "UIButton" from UI components
->> 2. Change the display text to "Login"
->> 3. In the attributes inspector change its background color and tint color to your preference
->> 4. Resize and align the button in your view to the center and below the password textField
+>> 2. Resize the button to a third of the background image for both width and height
+>> 3. Add an image to the button so its visible
+>> 4. Copy the button (Comm ⌘ + C) and paste (Comm ⌘ + V) it 8 more times.
+>> 5. Reposition the buttons so they all fit adjacent to one another from left,right,top, and bottom.
 
-  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid5.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid4.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid5.gif" /></div>
 
-> 2-4. Connections
->> 1. Click on "Assistant Editor" to split the view in two. You will see the code on your right side
->> 2. Right click (double tap-drag) from your username textField to "ViewController" class right above viewDidLoad() function.
->> 3. Create an "IBOutlet" and give it a name (eg. "username")
->> 4. Do the same for password textField and Login button.
->> 5. In addition to an IBOutlet create an "IBAction" for your login button to do a task when tapped.
+> 2-3. Add a different tag to each button from 0 to 8 (9 in total)
+>> 1. While button is highlighted, in the attribute inspector, scroll down.
+>> 2. Change the tag number for each button
 
-  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid6.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid6.gif" /></div>
 
-> 2-5. Create a label for your page and size it right and center it on the view.
+> 2-4. Action connections for states
+>> 1. While viewing your storyboard click on "Assistant Editor" to split the view in two. You will see the code from "ViewController.swift" file on your right side. If not then select that file manually.
+>> 2. Right click (two finger tap-drag) from first button to "ViewController" class and right above viewDidLoad() function.
+>> 3. Create an "Action" connection and give it a name (eg. "buttonPressed")
+>> 4. for the remaining 8 button you only need to drag to the same @IBAction
 
-  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid7.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid7.gif" /></div>
+
+> 2-5. Create a label to show the winner. A button to restart the game.
+
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid8.gif" /></div>
   
-> 2-6. Under the "Size Inspector" apply the following Autoresizing parameters
+> 2-6. Create 1 IBOutlet connection for each label and button and 1 @IBAction for you restart button
+>> 1. Right click (two finger tap-drag) from Label to "ViewController" class.
+>> 2. Leave the connection type to be an "Outlet" and give it a name (eg. "winner")
+>> 3. Do the same for your restart button.
+>> 4. Create an @IBAction for the restart button just like how you created one for the first state button.
 
-  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/VacationPlanner_en/blob/master/Resources/vid8.gif" /></div>
+  <div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/tic_tac_toe_en/blob/master/videos/vid9.gif" /></div>
 
 #### 3, Add code blocks in ViewController.swift
   ★  It's preferable to write following code yourself. It will help you to understand code more.
@@ -87,70 +89,108 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // MARK: IB outlets
+    @IBOutlet weak var winner: UILabel!
+    @IBOutlet weak var playButton: UIButton!
     
-    @IBOutlet weak var username: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
-
-    // MARK: further UI
+    // Players by their number reference 
+    // 0 is unplayed button
+    // 1 is Cross
+    // 2 is Noughts
     
-    let spinner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.white)
+    var activePlayer = 1 // We start with Cross || Challenge: Try starting with the winner i.e. store the value of the winner
+    var gameState = [0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ] // From left to right and top to bottom these numbers represent the status of each button
+    var gameIsActive = true
+    
+    /*
+        Tag representation of our button matrix
+     
+                | 0 | 1 | 2 |
+                | 3 | 4 | 5 |
+                | 6 | 7 | 8 |
+     
+        Possible combinations are:
+ */
+    let winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+                               [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+                               [0, 4, 8], [2, 4, 6]] // Diagonals
     
     
-    // MARK: IB actions
-    
-    @IBAction func login(_ sender: Any) {
-       
-        spinner.isHidden = !spinner.isHidden
-        
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        if gameState[sender.tag] == 0 { // We get the tag of the button and if its state is 0 it means it hasnt been altered.
+            gameState[sender.tag] = activePlayer // We change the state of that position to the players number
+            
+            
+            // Now we need to change the buttons image to the right representation of the player and change the active player to the other player
+            
+            if activePlayer == 1 {
+                sender.setImage(UIImage(named: "x") , for: .normal)
+                activePlayer = 2
+            } else {
+                sender.setImage(UIImage(named: "o") , for: .normal)
+                activePlayer = 1
+            }
+            
+            
+            
+            // It's possible at this point someone has won the game, so we need to check if the states of our buttons match any of the winning combinations. We need to use a for loop to search through each winning combination and if we found a match, game is over
+            
+            for combination in winningCombinations {
+                // This will go through all the possible combinations in the winningCombinations array. Combination could be [2, 5, 8] as an example here
+                
+                if (gameState[combination[0]] != 0) && (gameState[combination[0]] == gameState[combination[1]]) && (gameState[combination[1]] == gameState[combination[2]]) {
+                    // Here we want to make sure the state number is not 0 and all 3 positions are the same state. For example, 1 for the cross.
+                    
+                    gameIsActive = false // Game ends because a winning condition is found
+                    
+                    // Check to see who won
+                    if gameState[combination[0]] == 1 {
+                        winner.text = "Cross has won"
+                    } else {
+                        winner.text = "Nought has won"
+                    }
+                    winner.isHidden = false
+                    playButton.isHidden = false
+                }
+            }
+            
+            // Its possible that all states have changed to 1 or 2 and no winner has been found so we also need to check if any 0s are left. In that case its a draw.
+            
+            gameIsActive = false // Automaticaly assume game has ended as a draw unless there are more states to be played.
+            
+            for state in gameState {
+                if state == 0 {
+                    gameIsActive = true
+                    break
+                }
+            }
+            
+            if !gameIsActive {
+                winner.text = "It's a draw"
+                winner.isHidden = false
+                playButton.isHidden = false
+            }
+            
+            // Challenge: In case there is a winner by the last state we get a draw. How can we make sure we get the winner?
+        }
     }
     
-    // MARK: view controller methods
-    
-    
-    // Gets called once during loading of the view
+    @IBAction func playAgain(_ sender: UIButton) {
+        
+        winner.isHidden = true
+        playButton.isHidden = true
+        
+        gameState = [0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ]
+        gameIsActive = true
+        activePlayer = 1
+        
+        resetImages()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //set up the UI
-        loginButton.layer.cornerRadius = 8.0
-        loginButton.layer.masksToBounds = true
-        
-        spinner.frame = CGRect(x: -20.0, y: 6.0, width: 20.0, height: 20.0)
-        spinner.startAnimating()
-        spinner.center = CGPoint(x: spinner.bounds.midX + 5.0,
-                                 y: loginButton.bounds.midY)
-        loginButton.addSubview(spinner)
-        
-    }
-    
-    // Gets called every time before view appears
-    
-    override func viewWillAppear(_ animated: Bool) {
-        username.center.x  -= view.bounds.width
-        password.center.x -= view.bounds.width
-        loginButton.center.x -= view.bounds.width
-    }
-    
-    // Gets called right after the view apears
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-        spinner.isHidden = true
-        
-        UIView.animate(withDuration: 0.5, animations: {
-            self.username.center.x += self.view.bounds.width
-        })
-        
-        UIView.animate(withDuration: 0.5, delay: 0.3, options: [], animations: {
-            self.password.center.x += self.view.bounds.width
-        }, completion: nil)
-        
-        UIView.animate(withDuration: 0.5, delay: 0.4, options: [], animations: {
-            self.loginButton.center.x += self.view.bounds.width
-        }, completion: nil)
+        winner.isHidden = true
+        playButton.isHidden = true
+        resetImages()
     }
 
     override func didReceiveMemoryWarning() {
@@ -158,14 +198,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func resetImages() {
+        for button in view.subviews {
+            if let button = button as? UIButton {
+                button.setImage(nil, for: .normal)
+            }
+        }
+    }
+
 }
 
-```
-## Challenge
 
-1. Make the login button to expand and shrink on tap with spring effect
-2. Change the Login button's title to "Cancel" while its activity indicator is showing and the button is expanded.
-3. Make the login button change color for different states
+```
+## Challenges
+
+1. Try starting the game with the last winner. i.e. Store the value of the winner
+2. In case there is a winner by the very last state change we get a draw. How can we make sure we get the winner displayed instead of the game ending in a draw? 
 
 ## Suggestions
 
